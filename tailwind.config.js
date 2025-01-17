@@ -1,14 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    darkMode: ["class"],
+export default {
     content: [
-      './pages/**/*.{ts,tsx}',
-      './components/**/*.{ts,tsx}',
-      './app/**/*.{ts,tsx}',
-      './src/**/*.{ts,tsx}',
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          'maxx-blue': '#496DA7',
+          'maxx-gold': '#FBB019',
+          'maxx-black': '#2D2D2D',
+        },
+      },
     },
     plugins: [],
   }
